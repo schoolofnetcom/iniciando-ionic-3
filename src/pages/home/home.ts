@@ -16,7 +16,7 @@ export class HomePage {
   }
 
   ngOnInit() {
-    this.http.get('http://pokeapi.co/api/v2/pokemon')
+    this.http.get('https://pokeapi.co/api/v2/pokemon')
         .map((res: Response) => {
           let body = res.json();
           return body || {};
